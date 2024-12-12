@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen JavaScript</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1 id="ocultable">Examen JavaScript</h1>
+    <ol>
+        <li>Programa el botón <b>'Ocultar cabecera'</b> de manera que al hacer click se oculte la cabecera, 'h1', de esta página y el texto del botón cambiará a <b>'Mostrar cabecera'.</b>
+            <br>
+        Cuando hagamos click en el botón <b>'Mostrar cabecera'</b> se mostrará de nuevo la cabecera 'h1' y el texto del botón volverá a ser <b>'Ocultar cabecera'</b> comportándose de nuevo como al inicio.</li>
+        <button onclick="hide()" id="hide">Ocultar cabecera</button>
+        <button onclick="show()" id="show">Mostrar cabecera</button>
+        <br><br>
+
+        
+        <li>Programa el botón <b>'Lanzar dado'</b> de manera que:</li>
+        <ol type="a">
+            <li>Al hacer click obtengas un número al azar entre 1 y 6, y se muestre en el 'p' <i>dado</i>. </li>
+            <li>En el 'p' <i>resumen</i> se mostrará el número de lanzamientos del dado y las veces que ha salido el <b>6</b>.</li>
+        </ol>
+
+        <div>
+            <button onclick="dado()">Lanzar dado</button>
+            <p id="dado">0</p>
+        </div>
+        <p id="resumen">Lanzamientos: <span id="numl"></span><br> Número de veces que ha salido 6: <span id="nums"></span> </p>
+        <p><i>El código JavaScript debe estar en el fichero index.js</i></p>
+</body>
+</ol>
+
+</html>
